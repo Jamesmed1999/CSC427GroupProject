@@ -1,0 +1,4 @@
+repository "CSC427GroupProject@Eric_splace@cloud"
+  path "/"
+    br "/main"
+    co "/main"
