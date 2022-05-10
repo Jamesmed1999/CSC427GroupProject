@@ -19,8 +19,7 @@ public class Hero : MonoBehaviour
 		hitbox.SetActive(false);
 		if(S==null)S=this;
 		else Destroy(this);
-	}
-	void Update()
+	}void Update()
 	{
 		if(hidehitbox != 0 && Time.time>hidehitbox){
 			hitbox.SetActive(false);
@@ -38,5 +37,9 @@ public class Hero : MonoBehaviour
 		}
 		transform.LookAt(loc);
 		transform.position = loc;
-	}
+	}/*public void OnCollisionEnter(Collision other){
+		if(other.gameObject.tag == "Enemy"){
+			transform.position += (transform.position-other.transform.position)*0.2f;
+		}
+	}*/
 }
