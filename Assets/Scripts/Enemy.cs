@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
 	public float projectileSpeed=10f;
 	public float offsetForward=1.5f;
 	public float offsetUp=0f;
+	public float Health=1;
 	[Header("Set Dynamically")]
 	public float canGo;
 	public float canShoot;
@@ -75,6 +76,9 @@ public class Enemy : MonoBehaviour
 				go.SetActive(true);
 				rb.velocity = go.transform.TransformDirection(Vector3.down)*projectileSpeed;
 			}
+	}public void Damage(int damage){
+		Health-=damage;
+		if(Health<=0)gameObject.SetActive(false);
 	}
 }
 
