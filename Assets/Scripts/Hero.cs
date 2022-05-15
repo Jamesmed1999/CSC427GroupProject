@@ -14,13 +14,14 @@ public class Hero : MonoBehaviour
 	[Header("Set Dynamically")]
 	public float hidehitbox=0f;
 	public float attackdelay=0f;
-	public int health=12;//3 hearts, 4 per heart
 	void Start()
 	{
 		hitbox.SetActive(false);
 		if(S==null)S=this;
 		else Destroy(this);
-	}void Update(){
+	}
+	void Update()
+	{
 		if(hidehitbox != 0 && Time.time>hidehitbox){
 			hitbox.SetActive(false);
 		}
@@ -37,5 +38,5 @@ public class Hero : MonoBehaviour
 		}
 		transform.LookAt(loc);
 		transform.position = loc;
-	}public void Damage(int damage){health-=damage;}
+	}
 }
