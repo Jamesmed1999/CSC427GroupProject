@@ -112,6 +112,7 @@ GameObject:
   - component: {fileID: 459391013254377371}
   - component: {fileID: 459391013254377370}
   - component: {fileID: 459391013254377375}
+  - component: {fileID: 8923238404234699602}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Player
@@ -217,6 +218,7 @@ MonoBehaviour:
   attackcooldown: 0.5
   hidehitbox: 0
   attackdelay: 0
+  health: 12
 --- !u!54 &459391013254377375
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -233,3 +235,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &8923238404234699602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459391013254377349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f07f1b9da201bf44c92f0daa919a26cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

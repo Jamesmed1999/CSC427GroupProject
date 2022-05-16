@@ -12,6 +12,7 @@ public class mainmenu : MonoBehaviour
     }
     public void Startgame()
     {
-        SceneManager.LoadScene("Tmaze"); //replace with hub scene!!!!!!!
+        SceneManager.LoadScene("hub"); //replace with hub scene!!!!!!!
+        
     }
 }
