@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 2039a0ad0a9d05549928b70362f54902, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 9803600998c48b140b2f7038d0fc2eb1, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18827617, g: 0.19113809, b: 0.19109794, a: 1}
+  m_IndirectSpecularColor: {r: 0.096991785, g: 0.18686467, b: 0.27646858, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11850,8 +11850,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 021ee8f7d6991f0479223178da2a7b1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 2049780183}
-  Player: {fileID: 1081106223}
 --- !u!65 &876209743
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14316,6 +14314,7 @@ GameObject:
   - component: {fileID: 1081106224}
   - component: {fileID: 1081106229}
   - component: {fileID: 1081106230}
+  - component: {fileID: 1081106231}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Untagged
@@ -14342,6 +14341,7 @@ MonoBehaviour:
   attackcooldown: 1
   hidehitbox: 0
   attackdelay: 0
+  health: 12
 --- !u!65 &1081106225
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14447,6 +14447,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86a08c8db501d054892dc0f73c93c0b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1081106231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081106223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f07f1b9da201bf44c92f0daa919a26cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!43 &1113782115
@@ -28109,6 +28121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 579b78b8278c6ea45a828c5e36a2d3a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  distance: 5
 --- !u!328 &1855209199
 VideoPlayer:
   m_ObjectHideFlags: 0
