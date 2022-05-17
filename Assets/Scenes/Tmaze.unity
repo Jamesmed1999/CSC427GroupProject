@@ -12258,7 +12258,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &877539839
 PrefabInstance:
@@ -14645,7 +14645,6 @@ GameObject:
   - component: {fileID: 1081106225}
   - component: {fileID: 1081106224}
   - component: {fileID: 1081106229}
-  - component: {fileID: 1081106230}
   - component: {fileID: 1081106231}
   m_Layer: 0
   m_Name: Hero
@@ -14751,7 +14750,7 @@ Transform:
   m_Children:
   - {fileID: 1317091502}
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1081106229
 Rigidbody:
@@ -14769,18 +14768,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!114 &1081106230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1081106223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86a08c8db501d054892dc0f73c93c0b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1081106231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28542,7 +28529,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
 --- !u!81 &1855209196
 AudioListener:

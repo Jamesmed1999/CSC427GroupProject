@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tmaze.unity
     guid: 5838882050671174da83e0c958067403
+  - enabled: 1
+    path: Assets/Scenes/reRH.unity
+    guid: 815ad92bf5c4bbd429fd547ef2d6941f
   m_configObjects: {}
