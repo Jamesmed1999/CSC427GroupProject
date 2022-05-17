@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class mainmenu : MonoBehaviour
 {
+    [SerializeField]
+    string sceneName = "";
     public void Exit()
     {
         Application.Quit();
@@ -12,7 +14,8 @@ public class mainmenu : MonoBehaviour
     }
     public void Startgame()
     {
-        SceneManager.LoadScene("hub"); //replace with hub scene!!!!!!!
+        SceneManager.LoadScene(sceneName); //replace with hub scene!!!!!!!
         
     }
+
 }
