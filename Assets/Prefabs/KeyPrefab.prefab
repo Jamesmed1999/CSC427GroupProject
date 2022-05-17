@@ -48,7 +48,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1906765290536585586}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1b580d0c3c402e4dbfc913b8f6bf478, type: 3}
+  m_Script: {fileID: 11500000, guid: 59352e9602f06117681e61b7dbdb6cab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   KeyT: 0
@@ -77,6 +77,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18b937b36e471dc489bc760b1217e428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spinSpeed: 50
+  rotateSpeed: 0
 --- !u!1 &2093006499977994736
 GameObject:
   m_ObjectHideFlags: 0
