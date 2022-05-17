@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class ObjectSpin : MonoBehaviour
 {
+    [SerializeField] 
+    int spinSpeed = 50, rotateSpeed = 0;
 
 
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0f, 50 * Time.deltaTime, 0f, Space.Self); //you spin me right round
+        transform.Rotate(0f, spinSpeed * Time.deltaTime, rotateSpeed, Space.Self); //you spin me right round
     }
 }
