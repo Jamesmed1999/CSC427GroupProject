@@ -19,6 +19,7 @@ public class HubTeleporter : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
+        FindObjectOfType<AudioManager>().Play("tele");
         SceneManager.LoadScene(sceneName);
     }
 }

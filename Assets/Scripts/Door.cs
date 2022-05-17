@@ -14,6 +14,7 @@ public class Door : MonoBehaviour //attach to doors prefabs
 
     public void openDoor() //door "opener" 
     {
+        FindObjectOfType<AudioManager>().Play("yo");
         gameObject.SetActive(false);
     }
 

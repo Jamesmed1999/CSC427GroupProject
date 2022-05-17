@@ -12,6 +12,7 @@ public class KeyHolder : MonoBehaviour //attach script to hero allows hero to st
     }
     public void addKey(Key.KeyType k) //adds key to key list
     {
+        FindObjectOfType<AudioManager>().Play("key");
         Debug.Log("Added Key  " + k);
         KeyList.Add(k);
     }

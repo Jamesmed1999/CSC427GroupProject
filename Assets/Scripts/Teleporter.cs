@@ -9,6 +9,7 @@ public class Teleporter : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        FindObjectOfType<AudioManager>().Play("tele");
         Player.transform.position = Target.transform.position;
     }
 }

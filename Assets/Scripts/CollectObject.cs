@@ -10,12 +10,13 @@ public class CollectObject : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         Collectable.collectCount += 1;
+        FindObjectOfType<AudioManager>().Play("nice");
         Debug.Log("collected");
         Debug.Log("collectCount" + Collectable.collectCount);
         Destroy(gameObject);
-        if (Collectable.collectCount == 2)
+        if (Collectable.collectCount == 3)
         {
-            SceneManager.LoadScene("mainmenu"); //replace with credits scene
+            SceneManager.LoadScene("outro"); //replace with credits scene
         }
     }
 }
